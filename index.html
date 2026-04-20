@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Courierly – Smart Courier Software</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -20,458 +19,432 @@
       }
     }
   </script>
+
+  <style>
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll {
+      display: flex;
+      width: max-content;
+      animation: scroll 18s linear infinite;
+    }
+  </style>
+
 </head>
 
 <body class="font-sans text-slate-800">
 
 <!-- ================= HEADER ================= -->
-<header class="bg-primary text-white sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">Courierly</h1>
-    <nav class="hidden md:flex space-x-6">
-      <a href="#features" class="hover:text-secondary">Features</a>
-      <a href="#modules" class="hover:text-secondary">Modules</a>
-      <a href="#pricing" class="hover:text-secondary">Pricing</a>
-      <a href="#terms" class="hover:text-secondary">Terms</a>
-	   <a href="#contact" class="hover:text-secondary">Contact us</a>
-      
-    </nav>
+<header class="bg-primary text-white sticky top-0 z-50 shadow-md">
+  
+  <!-- FULL WIDTH BACKGROUND -->
+  <div class="w-full">
+
+    <!-- CENTERED CONTAINER -->
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold tracking-wide">
+        Courierly
+      </h1>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+
+        
+
+        <a href="#modules" class="hover:text-slate-200 transition">
+          Modules
+        </a>
+
+        <a href="#pricing" class="hover:text-slate-200 transition">
+          Pricing
+        </a>
+      <a href="#clients" class="hover:text-slate-200 transition">
+          Clients
+        </a>
+        <a href="#contact" class="hover:text-slate-200 transition">
+          Contact
+        </a>
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <button class="text-white text-2xl">☰</button>
+      </div>
+
+    </div>
+
   </div>
+
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+<section class="py-24 bg-white">
+  <div class="max-w-3xl mx-auto px-4 text-center space-y-6">
 
-    <!-- Left: Text + Features + CTA -->
-    <div class="space-y-6">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        Smart Courier Software
-      </h2>
-      <p class="text-lg text-slate-600 mb-6">
-        Booking থেকে Delivery পর্যন্ত আপনার কুরিয়ার ব্যবসা পরিচালনা করুন  
-        একটি অটোমেটেড, রিয়েল-টাইম সিস্টেমে।
-      </p>
-      <ul class="space-y-2 mb-6 text-slate-700">
-        <li>✔ Real-Time Tracking</li>
-        <li>✔ Automated Dispatch</li>
-        <li>✔ Multi-Branch Control</li>
-        <li>✔ 100% Accountability</li>
-      </ul>
-      <a href="https://www.youtube.com/watch?v=pgg2cnmOsGI"
-         class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition" target="_blank">
-        Request Live Demo
-      </a> <a href="#contact" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition">
-        Contact Us
-      </a>
-	   
-    
-    </div>
+    <!-- Title -->
+    <h2 class="text-4xl md:text-5xl font-bold">
+      Smart Courier Software
+    </h2>
 
-    <!-- Right: Image -->
-    <div class="flex justify-center">
-      <a href="https://ibb.co.com/rLKcwM3"><img src="https://i.ibb.co.com/5zXnRvk/1-5.png" alt="1-5" border="0"></a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= FEATURES ================= -->
-<section id="features" class="py-20">
-
-	<div class="max-w-7xl mx-auto px-4 text-center">
-
-    <h3 class="text-3xl md:text-4xl font-bold mb-12 text-primary">
-      Key Features
-    </h3>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-slate-50 p-6 rounded-xl shadow">📍 Real-Time Tracking</div>
-      <div class="bg-slate-50 p-6 rounded-xl shadow">🤖 Automated Dispatch</div>
-      <div class="bg-slate-50 p-6 rounded-xl shadow">🏢 Multi-Branch Management</div>
-      <div class="bg-slate-50 p-6 rounded-xl shadow">📊 Delivery Analytics</div>
-      <div class="bg-slate-50 p-6 rounded-xl shadow">💰 COD & Accounts</div>
-      <div class="bg-slate-50 p-6 rounded-xl shadow">🔔 SMS Notification</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= MODULES ================= -->
-<section id="modules" class="py-20 bg-white">
- 	 <div class="max-w-7xl mx-auto px-4 text-center">
-
-    <h3 class="text-3xl md:text-4xl font-bold mb-12 text-primary">
-       Complete System Modules
-    </h3>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">⚙️ Settings</h4>
-        Company, Business Type, Zone, Coverage Area, Notice, Problem
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">👥 Users</h4>
-        Merchant, Rider, Agent, Call Center, Accounts, Manager
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">🛡️ Admin</h4>
-        Configuration, Charge Setup, Order Flow, Payments, Reports
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">👔 Manager</h4>
-        Order Transfer, Returns, Complains
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">🏢 Agent</h4>
-        Pickup, Delivery, Hub Transfer, Reschedule, Hold
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">🏍️ Rider</h4>
-        Pickup, Delivery, Partial, Cancel, Report
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">💰 Accounts</h4>
-        Agent Collection, Merchant Payment, Reports
-      </div>
-
-      <div class="bg-slate-50 p-6 rounded-xl shadow">
-        <h4 class="font-semibold mb-3">🛍️ Merchant</h4>
-        Shop, Employee, Create Order, Bulk Import, Complains
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= HOW IT WORKS ================= -->
-<section id="how" class="py-20 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-
-    <h3 class="text-3xl md:text-4xl font-bold mb-12 text-primary">
-      How Courierly Works
-    </h3>
-    <p class="text-slate-600 mb-12 max-w-2xl mx-auto">
-      Courierly-এর workflow সহজ ও স্বয়ংক্রিয়: Booking থেকে Delivery পর্যন্ত সব কিছু এক জায়গায় পরিচালনা করুন
+    <!-- Subtitle -->
+    <p class="text-lg text-slate-600">
+      Booking থেকে Delivery পর্যন্ত সম্পূর্ণ অটোমেটেড কুরিয়ার ম্যানেজমেন্ট সিস্টেম
     </p>
 
-    <div class="grid md:grid-cols-5 gap-8">
+    <!-- Features -->
+    <div class="flex flex-wrap justify-center gap-3 text-slate-700 text-sm">
+      <span class="bg-slate-100 px-4 py-2 rounded-full">✔ Real-Time Tracking</span>
+      <span class="bg-slate-100 px-4 py-2 rounded-full">✔ Auto Dispatch</span>
+      <span class="bg-slate-100 px-4 py-2 rounded-full">✔ Multi Branch</span>
+      <span class="bg-slate-100 px-4 py-2 rounded-full">✔ COD System</span>
+    </div>
 
-      <!-- Step 1 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center">
-        <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-4 text-2xl font-bold">
-          1
-        </div>
-        <h4 class="font-semibold text-lg mb-2">Parcel Booking</h4>
-        <p class="text-slate-600 text-sm">
-          ক্লায়েন্টরা সহজেই parcel বুক করতে পারবেন online বা offline
-        </p>
+    <!-- Video -->
+ <div class="mt-8 flex justify-center">
+  
+  <div class="w-full max-w-2xl">
+    
+    <video 
+      class="w-full h-[360px] md:h-[420px] rounded-2xl shadow-xl object-cover"
+      controls
+      autoplay
+      muted
+      loop
+      playsinline>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Jx9exaL6diE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+
+</div>
+
+
+
+    <!-- CTA Buttons -->
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="https://wa.me/01978866977"
+         class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
+        Request Demo
+      </a>
+
+      <a href="https://wa.me/01978866977"
+         class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition">
+        WhatsApp Us
+      </a>
+    </div>
+
+  </div>
+</section>
+      
+
+<!-- ================= MODULES (FULL COURIER SYSTEM) ================= -->
+<section id="modules" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+
+    <h3 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+      Complete Courier System Modules
+    </h3>
+
+    <p class="text-slate-600 mb-12 max-w-2xl mx-auto">
+      একটি সম্পূর্ণ কুরিয়ার ম্যানেজমেন্ট সিস্টেমের জন্য প্রয়োজনীয় সব মডিউল এখানে অন্তর্ভুক্ত
+    </p>
+
+    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">
+
+      <!-- Core Operations -->
+      <div class="bg-slate-50 p-5 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">📦 Parcel Booking</h4>
+        <p class="text-sm text-slate-600">Single & bulk parcel booking system</p>
       </div>
 
-      <!-- Step 2 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center">
-        <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-4 text-2xl font-bold">
-          2
-        </div>
-        <h4 class="font-semibold text-lg mb-2">Auto Dispatch to Rider</h4>
-        <p class="text-slate-600 text-sm">
-          System automatically assigns orders to nearest available rider
-        </p>
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🚚 Pickup Management</h4>
+        <p class="text-sm text-slate-600">Auto & manual pickup assignment</p>
       </div>
 
-      <!-- Step 3 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center">
-        <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-4 text-2xl font-bold">
-          3
-        </div>
-        <h4 class="font-semibold text-lg mb-2">Real-Time Tracking</h4>
-        <p class="text-slate-600 text-sm">
-          Parcel এর অবস্থান রিয়েল-টাইমে ট্র্যাক করুন
-        </p>
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🏍️ Rider App</h4>
+        <p class="text-sm text-slate-600">Delivery tracking & task management</p>
       </div>
 
-      <!-- Step 4 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center">
-        <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-4 text-2xl font-bold">
-          4
-        </div>
-        <h4 class="font-semibold text-lg mb-2">Proof of Delivery</h4>
-        <p class="text-slate-600 text-sm">
-          Delivery হওয়ার পর digital proof automatically generate হয়
-        </p>
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">📍 Real-Time Tracking</h4>
+        <p class="text-sm text-slate-600">Live parcel location tracking</p>
       </div>
 
-      <!-- Step 5 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition text-center">
-        <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full mx-auto mb-4 text-2xl font-bold">
-          5
-        </div>
-        <h4 class="font-semibold text-lg mb-2">Report & Settlement</h4>
-        <p class="text-slate-600 text-sm">
-          Order summary, payments এবং settlement report সহজেই access করুন
-        </p>
+      <!-- Delivery Flow -->
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🔄 Hub Transfer</h4>
+        <p class="text-sm text-slate-600">Branch to branch parcel movement</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">📬 Delivery Management</h4>
+        <p class="text-sm text-slate-600">Successful & failed delivery control</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">❌ Return Management</h4>
+        <p class="text-sm text-slate-600">Return & reverse logistics system</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">⏳ Pending Orders</h4>
+        <p class="text-sm text-slate-600">Hold, delay & reschedule orders</p>
+      </div>
+
+      <!-- Admin & Control -->
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🛠️ Admin Dashboard</h4>
+        <p class="text-sm text-slate-600">Full system control panel</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">👥 User Management</h4>
+        <p class="text-sm text-slate-600">Rider, Merchant, Agent control</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🏢 Branch System</h4>
+        <p class="text-sm text-slate-600">Multi-branch management system</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">⚙️ Settings</h4>
+        <p class="text-sm text-slate-600">Zone, area, pricing & configuration</p>
+      </div>
+
+      <!-- Finance -->
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">💰 COD Management</h4>
+        <p class="text-sm text-slate-600">Cash on delivery tracking system</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">💳 Accounts System</h4>
+        <p class="text-sm text-slate-600">Payments, invoices & settlements</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">📊 Financial Reports</h4>
+        <p class="text-sm text-slate-600">Profit, loss & daily reports</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">📉 Analytics Dashboard</h4>
+        <p class="text-sm text-slate-600">Business performance insights</p>
+      </div>
+
+      <!-- Communication -->
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🔔 SMS Notification</h4>
+        <p class="text-sm text-slate-600">Auto SMS updates for customers</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">💬 Complaint System</h4>
+        <p class="text-sm text-slate-600">Customer complaint handling</p>
+      </div>
+
+      <div class="bg-slate-50 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">🛍️ Merchant Panel</h4>
+        <p class="text-sm text-slate-600">Order create & manage system</p>
       </div>
 
     </div>
   </div>
 </section>
 
-
 <!-- ================= PRICING ================= -->
-<section id="pricing" class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-4 text-center">
+<!-- ================= PRICING (REDESIGNED PREMIUM) ================= -->
+<section id="pricing" class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
 
-    <h3 class="text-3xl md:text-4xl font-bold mb-12 text-primary">
-Pricing
+    <h3 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+      Pricing Plan
     </h3>
-	
-    <div class="grid md:grid-cols-3 gap-6">
+
+    <p class="text-slate-600 mb-12 max-w-2xl mx-auto">
+      আপনার ব্যবসার সাইজ অনুযায়ী সঠিক প্যাকেজ নির্বাচন করুন
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8">
 
       <!-- Starter -->
-     <div class="bg-slate-50 p-8 rounded-2xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-  <h4 class="text-xl font-semibold mb-2">Starter</h4>
-  <p class="text-slate-600 mb-2">Small Courier Business</p>
-  <p class="text-3xl font-bold text-primary mb-6">৳20,000</p>
-  
-   <a href="https://www.youtube.com/watch?v=pgg2cnmOsGI"
-         class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition" target="_blank">
-        Request Live Demo
-      </a>
-</div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg border hover:shadow-2xl transition transform hover:-translate-y-1">
 
-      <!-- Business (Highlighted) -->
-      <div class="bg-primary p-8 rounded-xl shadow-xl text-center border-2 border-primary">
-        <h4 class="text-xl font-semibold mb-2 text-white">Business</h4>
-        <p class="text-white mb-2">Growing Courier Company</p>
-        <p class="text-2xl font-bold text-white mb-4">৳3,50,000</p>
-        <a href="https://www.youtube.com/watch?v=pgg2cnmOsGI" target="_blank"
-           class="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-white transition">
-          Request Demo
+        <h4 class="text-xl font-semibold mb-2">Starter</h4>
+        <p class="text-slate-500 mb-6">Small Courier Business</p>
+
+        <div class="text-4xl font-bold text-primary mb-6">
+          ৳50,000
+        </div>
+
+        <ul class="text-sm text-slate-600 space-y-2 mb-6">
+          <li>✔ Basic Tracking System</li>
+          <li>✔ Order Management</li>
+          <li>✔ Limited Support</li>
+        </ul>
+
+        <a href="#contact"
+           class="block bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Business (POPULAR) -->
+      <div class="bg-primary text-white p-8 rounded-2xl shadow-2xl relative transform scale-105">
+
+        <!-- Badge -->
+        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white text-primary text-xs font-bold px-4 py-1 rounded-full shadow">
+          MOST POPULAR
+        </div>
+
+        <h4 class="text-xl font-semibold mb-2 mt-4">Business</h4>
+        <p class="text-white/80 mb-6">Growing Courier Company</p>
+
+        <div class="text-4xl font-bold mb-6">
+          ৳5,00,000
+        </div>
+
+        <ul class="text-sm space-y-2 mb-6 text-white/90">
+          <li>✔ Full Automation System</li>
+          <li>✔ Real-Time Tracking</li>
+          <li>✔ Multi Branch Support</li>
+          <li>✔ Advanced Reports</li>
+        </ul>
+
+        <a href="#contact"
+           class="block bg-white text-primary py-3 rounded-lg font-semibold hover:bg-slate-100 transition">
+          Get Started
         </a>
       </div>
 
       <!-- Enterprise -->
-      <div class="bg-slate-50 p-8 rounded-2xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-  <h4 class="text-xl font-semibold mb-2">Enterprise</h4>
-  <p class="text-slate-600 mb-2">Large Courier Network</p>
-  <p class="text-3xl font-bold text-primary mb-6">৳1,000,000</p>
-  
-   <a href="https://www.youtube.com/watch?v=pgg2cnmOsGI"
-         class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition" target="_blank">
-        Request Live Demo
-      </a>
-</div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg border hover:shadow-2xl transition transform hover:-translate-y-1">
 
+        <h4 class="text-xl font-semibold mb-2">Enterprise</h4>
+        <p class="text-slate-500 mb-6">Large Courier Network</p>
+
+        <div class="text-4xl font-bold text-primary mb-6">
+          ৳10,00,000
+        </div>
+
+        <ul class="text-sm text-slate-600 space-y-2 mb-6">
+          <li>✔ Custom Development</li>
+          <li>✔ Dedicated Server</li>
+          <li>✔ API Integration</li>
+          <li>✔ Priority Support</li>
+        </ul>
+
+        <a href="#contact"
+           class="block bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition">
+          Contact Sales
+        </a>
+      </div>
 
     </div>
   </div>
 </section>
-
-
-<!-- ================= CTA ================= -->
-<section id="demo" class="bg-primary text-white py-20 text-center">
-  <h3 class="text-3xl font-bold mb-4">
-    Ready to Automate Your Courier Business?
-  </h3>
-  <p class="mb-6 text-lg">
-    Courierly দিয়ে আপনার কুরিয়ার অপারেশন নিন Next Level-এ
-  </p>
-
-  <!-- Updated Button -->
-  <a href="https://www.youtube.com/watch?v=pgg2cnmOsGI" target="_blank"
-     class="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-white transition">
-        Request Live Demo
-  </a>
-</section>
-
-<!-- ================= Technology Used ================= -->
-<section id="technology" class="py-20 bg-white">
+<!-- ================= CLIENTS (FIXED DEMO SLIDER) ================= -->
+<section id="clients" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 text-center">
-    <h3 data-aos="fade-up" class="text-3xl font-bold mb-12 text-primary">Technology Used</h3>
-    
-    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
 
-      <!-- Frontend -->
-      <div data-aos="zoom-in" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" 
-             alt="HTML5" class="h-12 mx-auto mb-3">
-        <h4 class="font-semibold mb-2">HTML5</h4>
-        <p class="text-slate-600 text-sm">Semantic markup for web structure</p>
+    <h3 class="text-3xl md:text-4xl font-bold text-primary mb-10">
+      Our Trusted Clients
+    </h3>
+
+    <p class="text-slate-600 mb-10 max-w-2xl mx-auto">
+      আমরা বিভিন্ন কুরিয়ার ও ই-কমার্স কোম্পানির সাথে সফলভাবে কাজ করছি
+    </p>
+
+    <!-- Slider -->
+    <div class="overflow-hidden relative">
+      <div class="flex space-x-6 animate-scroll">
+
+        <!-- RELIABLE DEMO LOGOS -->
+        <img src="https://dummyimage.com/160x80/65aa3c/ffffff&text=Client+1" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/0ea5e9/ffffff&text=Client+2" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/111827/ffffff&text=Client+3" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/65aa3c/ffffff&text=Client+4" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/0ea5e9/ffffff&text=Client+5" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/111827/ffffff&text=Client+6" class="h-20 rounded-lg shadow bg-white">
+
+        <!-- LOOP -->
+        <img src="https://dummyimage.com/160x80/65aa3c/ffffff&text=Client+1" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/0ea5e9/ffffff&text=Client+2" class="h-20 rounded-lg shadow bg-white">
+        <img src="https://dummyimage.com/160x80/111827/ffffff&text=Client+3" class="h-20 rounded-lg shadow bg-white">
+
       </div>
-      
-      <div data-aos="zoom-in" data-aos-delay="100" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="h-12 mx-auto mb-3">
-        <h4 class="font-semibold mb-2">Tailwind CSS</h4>
-        <p class="text-slate-600 text-sm">Modern responsive UI design</p>
-      </div>
-      
-      <div data-aos="zoom-in" data-aos-delay="200" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="h-12 mx-auto mb-3">
-        <h4 class="font-semibold mb-2">JavaScript</h4>
-        <p class="text-slate-600 text-sm">Dynamic interactivity & front-end logic</p>
-      </div>
-
-      <div data-aos="zoom-in" data-aos-delay="300" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React JS" class="h-12 mx-auto mb-3">
-        <h4 class="font-semibold mb-2">React JS</h4>
-        <p class="text-slate-600 text-sm">Modern SPA & component-based UI</p>
-      </div>
-
-      <!-- Backend -->
-      <div data-aos="zoom-in" data-aos-delay="400" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="h-12 mx-auto mb-3">
-        <h4 class="font-semibold mb-2">Laravel</h4>
-        <p class="text-slate-600 text-sm">PHP framework for backend & APIs</p>
-      </div>
-
-		<!-- MySQL -->
-		<div data-aos="zoom-in" data-aos-delay="500" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-		  <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/ZzcKYK2r/mysql.png" alt="mysql" border="0"></a>
-		  <h4 class="font-semibold mb-2">MySQL</h4>
-		  <p class="text-slate-600 text-sm">Relational database for data storage</p>
-		</div>
-
-		<!-- Git -->
-		<div data-aos="zoom-in" data-aos-delay="700" class="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
-		  <a href="https://ibb.co.com/21c2swM5"><img src="https://i.ibb.co.com/B5TDrm6w/github.jpg" alt="github" border="0"></a>
-		  <h4 class="font-semibold mb-2">Git</h4>
-		  <p class="text-slate-600 text-sm">Version control for code management</p>
-		</div>
-
-
     </div>
+
   </div>
 </section>
 
+<style>
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite;
+}
+</style>
+    
+</section>
 
-<!-- ================= TERMS & CONDITIONS ================= -->
-<section id="terms" class="py-20 bg-slate-100">
+<!-- ================= CONTACT (FINAL CLEAN DESIGN) ================= -->
+<section id="contact" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-4">
 
-    <div class="text-center mb-14">
-      <h3 class="text-3xl md:text-4xl font-bold mb-4 text-primary">
-        Terms & Conditions
-      </h3>
-      <p class="text-slate-600 max-w-3xl mx-auto">
-        Courierly সফটওয়্যার ডেভেলপমেন্ট, ব্যবহার ও সাপোর্ট সংক্রান্ত  
-        আমাদের শর্তাবলী
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-bold text-primary">Contact Us</h3>
+      <p class="text-slate-600 mt-2">
+        আমরা 24 ঘন্টার মধ্যে রিপ্লাই দিই
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10 text-slate-700 text-sm">
+    <div class="grid md:grid-cols-2 gap-8">
 
-      <div class="bg-white p-8 rounded-2xl shadow">
-        <h4 class="text-xl font-semibold mb-4 text-primary">💳 Payment Terms</h4>
-        <ul class="list-disc list-inside space-y-2">
-          <li>কাজ শুরু করার জন্য Work Order প্রদান এবং <b>৫০% অগ্রিম পেমেন্ট</b> আবশ্যক।</li>
-          <li>ডেভেলপমেন্ট সম্পন্ন করে Demo প্রদানের সময় <b>৩০% পেমেন্ট</b> পরিশোধ করতে হবে।</li>
-          <li>Installation সম্পন্ন হওয়ার পর বাকি <b>২০% পেমেন্ট</b> দিতে হবে।</li>
-          <li>প্রজেক্ট সময় গণনা শুরু হবে <b>Work Order প্রদানের তারিখ থেকে</b>।</li>
-        </ul>
+      <!-- Info -->
+      <div class="bg-slate-50 p-8 rounded-2xl shadow space-y-5">
+
+        <div>📞 09649-866 977</div>
+        <div>📧 info@Courierly.com</div>
+        <div>📍 Dhaka, Bangladesh</div>
+
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow">
-        <h4 class="text-xl font-semibold mb-4 text-primary">🛠️ After Development Support</h4>
-        <ul class="list-disc list-inside space-y-2">
-          <li>ডেলিভারির পর <b>১ মাস ফ্রি সাপোর্ট</b> (শুধুমাত্র error/bug fixing)।</li>
-          <li><b>Package-1:</b> মাসিক সার্ভিস চার্জ <b>৫,০০০ টাকা</b> প্রযোজ্য।</li>
-          <li>এক মাস পর নতুন Module বা Custom Demand এর জন্য আলাদা চার্জ প্রযোজ্য।</li>
-          <li>সফটওয়্যারের সকল কোড <b>Creative Software-এর সম্পত্তি</b> হিসেবে গণ্য হবে।</li>
-          <li>ক্লায়েন্ট শুধুমাত্র <b>ব্যবহারের অধিকার</b> পাবেন, বিক্রয়যোগ্য নয়।</li>
-          <li>অবৈধ বিক্রয়ের প্রমাণ পাওয়া গেলে <b>Software Law অনুযায়ী আইনগত ব্যবস্থা</b> নেওয়া হবে।</li>
-        </ul>
+      <!-- CTA -->
+      <div class="bg-primary text-white p-8 rounded-2xl shadow flex flex-col justify-center">
+
+        <h4 class="text-2xl font-bold mb-4">Get Live Demo</h4>
+
+        <a href="#" class="bg-white text-primary px-6 py-3 rounded-lg text-center mb-3">
+          Request Demo
+        </a>
+
+        <a href="https://wa.me/01978866977"
+           class="bg-green-500 px-6 py-3 rounded-lg text-center">
+          WhatsApp Us
+        </a>
+
       </div>
 
     </div>
-
-    <div class="mt-12 text-center text-slate-600">
-      <p>এই শর্তাবলী সকল ক্লায়েন্টের জন্য প্রযোজ্য এবং project deliverable এর সাথে স্বীকৃত।</p>
-    </div>
-
   </div>
 </section>
-<!-- ================= EXTRA COSTS / NOTES ================= -->
-<section id="notes" class="py-16 bg-slate-50">
-  <div class="max-w-5xl mx-auto px-4 text-center">
-    <h3 class="text-3xl font-bold mb-6 text-primary">
-      Additional Notes
-    </h3>
-    <ul class="space-y-4 text-slate-700 text-left md:text-center list-disc list-inside">
-      <li>Transportation Cost & Food Allowance should be borne by the Client if office is outside Dhaka.</li>
-      <li>Domain, Hosting, Hardware, SMS Gateway, Play Store, VAT & Tax are <b>excluded</b> from this price.</li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- ================= Contact us ================= -->
-<section id="contact" class="py-20 bg-slate-50">
-  <div class="max-w-5xl mx-auto px-4 text-center">
-    <h3 class="text-3xl font-bold mb-8 text-primary">Contact Us</h3>
-
-    <p class="text-lg text-slate-700 mb-6">
-      আপনার প্রশ্ন বা ডেমো রিকোয়েস্টের জন্য যোগাযোগ করুন
-    </p>
-
-    <!-- Contact Info -->
-    <div class="grid sm:grid-cols-3 gap-8 mb-8">
-      <div class="space-y-2">
-        <h4 class="font-semibold text-lg">📞 Phone</h4>
-        <p>09649-866 977 | 01978-866 977</p>
-      </div>
-      <div class="space-y-2">
-        <h4 class="font-semibold text-lg">📧 Email</h4>
-        <p>info@Courierly.com</p>
-      </div>
-      <div class="space-y-2">
-        <h4 class="font-semibold text-lg">📍 Address</h4>
-        <p>Panthapath, Dhaka, Bangladesh</p>
-      </div>
-    </div>
-
-    <!-- Social Links -->
-    <div class="flex justify-center flex-wrap gap-6 mb-8">
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/courierlybd" target="_blank"
-     class="flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-full font-semibold shadow-lg transform transition duration-300 hover:bg-blue-500 hover:scale-105">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 5.004 3.657 9.128 8.438 9.879v-6.987H7.898v-2.892h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.892h-2.33v6.987C18.343 21.128 22 17.004 22 12z"/>
-    </svg>
-    Facebook
-  </a>
-
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/watch?v=MtMIfQRW_4A" target="_blank"
-     class="flex items-center gap-2 bg-red-600 text-white px-5 py-3 rounded-full font-semibold shadow-lg transform transition duration-300 hover:bg-red-500 hover:scale-105">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M23.498 6.186a2.994 2.994 0 0 0-2.107-2.11C19.607 3.5 12 3.5 12 3.5s-7.607 0-9.391.576a2.994 2.994 0 0 0-2.107 2.11A31.692 31.692 0 0 0 0 12a31.692 31.692 0 0 0 .502 5.814 2.994 2.994 0 0 0 2.107 2.11c1.784.576 9.391.576 9.391.576s7.607 0 9.391-.576a2.994 2.994 0 0 0 2.107-2.11A31.692 31.692 0 0 0 24 12a31.692 31.692 0 0 0-.502-5.814zM9.545 15.568V8.432l6.182 3.568-6.182 3.568z"/>
-    </svg>
-    YouTube
-  </a>
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/01978866977" target="_blank"
-     class="flex items-center gap-2 bg-green-500 text-white px-5 py-3 rounded-full font-semibold shadow-lg transform transition duration-300 hover:bg-green-400 hover:scale-105">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M16.416 13.004c-.234-.117-1.383-.684-1.596-.762-.211-.079-.364-.118-.518.117-.152.234-.587.762-.72.918-.132.152-.264.171-.497.057-.234-.117-1.004-.37-1.914-1.18-.708-.63-1.185-1.408-1.324-1.642-.132-.234-.014-.36.103-.477.107-.106.234-.264.351-.395.117-.132.156-.234.234-.39.078-.152.039-.285-.02-.402-.057-.117-.518-1.248-.708-1.712-.186-.446-.375-.386-.518-.393-.133-.007-.285-.008-.437-.008s-.402.057-.615.285c-.211.228-.807.787-.807 1.918 0 1.13.827 2.224.943 2.378.117.152 1.63 2.488 3.946 3.49.552.238.981.38 1.316.488.552.181 1.056.155 1.454.094.443-.068 1.383-.565 1.579-1.112.195-.546.195-1.016.137-1.112-.056-.096-.21-.152-.437-.269z"/>
-      <path fill="none" d="M0 0h24v24H0z"/>
-    </svg>
-    WhatsApp
-  </a>
-</div>
-
-
-   
-  </div>
-</section>
-
 
 <!-- ================= FOOTER ================= -->
 <footer class="bg-slate-900 text-slate-300 py-6 text-center">
