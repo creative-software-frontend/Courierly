@@ -13,7 +13,7 @@ const PricingSection = () => {
       price: '50,000',
       features: ['Basic Tracking System', 'Order Management', 'Limited Support'],
       popular: false,
-      btnText: 'Get Started',
+      btnText: 'Order Now',
     },
     {
       name: 'Business',
@@ -26,7 +26,7 @@ const PricingSection = () => {
         'Advanced Reports',
       ],
       popular: true,
-      btnText: 'Get Started',
+      btnText: 'Order Now',
     },
     {
       name: 'Enterprise',
