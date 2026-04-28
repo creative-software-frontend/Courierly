@@ -54,7 +54,6 @@ const ContactSection = () => {
           <div className={styles.contactInfo}>
             {[
               { icon: <HiPhone />, title: 'Phone', content: '09649-866 977' },
-              { icon: <HiWhatsApp />, title: 'whatsApp', content: '01978866977' },
               { icon: <HiMail />, title: 'Email', content: 'info@courierly.com' },
               { icon: <HiLocationMarker />, title: 'Address', content: 'Dhaka, Bangladesh' }
             ].map((info, idx) => (
