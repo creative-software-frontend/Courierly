@@ -7,32 +7,57 @@ import styles from './ClientsSection.module.css';
 const ClientsSection = () => {
   const clients = [
     { 
-      name: 'Fastrack', 
-      logo: '/fastrack.png' 
+      name: '1', 
+      logo: '/1.jpg' 
     },
     { 
-      name: 'FedEx', 
-      logo: '/fedex.png' 
+      name: '2', 
+      logo: '/2.jpg' 
     },
     { 
-      name: 'UPS', 
-      logo: '/ups.png' 
+      name: '3', 
+      logo: '/3.jpg' 
     },
     { 
-      name: 'Aramex', 
-      logo: '/aramex.png' 
+      name: '4', 
+      logo: '/4.jpg' 
     },
  
    
     { 
-      name: 'DHL', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/DHL_Express_logo.svg' 
+      name: '5', 
+      logo: '/5.jpg' 
     },
     { 
-      name: 'Maersk', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Maersk_Group_Logo.svg' 
+      name: '6', 
+      logo: '/6.jpg' 
     },
-
+{ 
+      name: '7', 
+      logo: '/7.jpg' 
+    },{ 
+      name: '8', 
+      logo: '/8.jpg' 
+    },{ 
+      name: '9', 
+      logo: '/9.jpg' 
+    },{ 
+      name: '10', 
+      logo: '/10.jpg' 
+    },{ 
+      name: '11', 
+      logo: '/11.jpg' 
+    },{ 
+      name: '12', 
+      logo: '/12.jpg' 
+    },{ 
+      name: '13', 
+      logo: '/13.jpg' 
+    },
+    { 
+      name: '14', 
+      logo: '/14.jpg' 
+    },
   ];
 
   // Double the array for infinite scroll effect
