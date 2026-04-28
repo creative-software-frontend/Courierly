@@ -58,6 +58,30 @@ const ClientsSection = () => {
       name: '14', 
       logo: '/14.jpg' 
     },
+    { 
+      name: '15', 
+      logo: '/15.jpg' 
+    },
+    { 
+      name: '16', 
+      logo: '/16.jpg' 
+    },
+    { 
+      name: '17', 
+      logo: '/17.jpg' 
+    },
+    { 
+      name: '18', 
+      logo: '/18.jpg' 
+    },
+    { 
+      name: '19', 
+      logo: '/19.jpg' 
+    },
+    { 
+      name: '20', 
+      logo: '/20.jpg' 
+    },
   ];
 
   // Double the array for infinite scroll effect
