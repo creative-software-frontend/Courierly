@@ -1,0 +1,181 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+}
+
+.navbarScrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+}
+
+.navbarTransparent {
+  background-color: var(--primary);
+  padding: 18px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo with Gradient Hover */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  background: white;
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+.navbarScrolled .logo {
+  color: white;
+  background: var(--primary);
+  /* Solid color when scrolled */
+}
+
+/* Desktop Nav Links */
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+.navLinkScrolled {
+  color: var(--dark);
+}
+
+.navLinkTransparent {
+  color: white;
+}
+
+/* Colorful Animated Underline */
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #77b141, #3498db);
+  /* Colorful gradient */
+  transition: width 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.navLink:hover {
+  color: white !important;
+  opacity: 0.9;
+}
+
+.navbarScrolled .navLink:hover {
+  color: var(--primary) !important;
+  opacity: 1;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Active State */
+.activeLink {
+  opacity: 1 !important;
+}
+
+.navLinkTransparent.activeLink {
+  color: white !important;
+  font-weight: 800;
+}
+
+.navLinkScrolled.activeLink {
+  color: var(--primary) !important;
+  font-weight: 800;
+}
+
+.activeLink::after {
+  width: 100% !important;
+}
+
+.mobileToggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Modern Mobile Menu */
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mobileNavLinks {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileNavLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+.mobileNavLink:hover {
+  background: rgba(119, 177, 65, 0.1);
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+}

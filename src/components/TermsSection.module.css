@@ -1,0 +1,89 @@
+.termsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.termsCard {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  height: 100%;
+  /* Smooth transition for the Framer Motion hover effect */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background accent for the card */
+.termsCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at top right, rgba(var(--primary-rgb), 0.05), transparent);
+  pointer-events: none;
+}
+
+.termsTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.titleIcon {
+  font-size: 1.6rem;
+}
+
+.termsList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.termItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* New: Icon Wrapper to make checkmarks look like badges */
+.iconWrapper {
+  background: rgba(var(--primary-rgb), 0.1);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.termIcon {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .termsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .termsCard {
+    padding: 30px;
+  }
+}
