@@ -83,9 +83,14 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <button className={`btn ${plan.popular ? '' : 'btn-primary'} ${styles.btnAction}`}>
+              <a
+                href="https://wa.me/8801978866977"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`btn ${plan.popular ? '' : 'btn-primary'} ${styles.btnAction}`}
+              >
                 {plan.btnText}
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>

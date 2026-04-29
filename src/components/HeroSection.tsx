@@ -37,8 +37,8 @@ const HeroSection = () => {
 
         <div className={styles.badgeContainer}>
           {badges.map((badge, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.5 + (index * 0.15) }}
@@ -58,7 +58,7 @@ const HeroSection = () => {
         >
           {/* Updated the src below to your specific video ID */}
           <iframe
-            src="https://www.youtube.com/embed/Dscoh8wYUSQ?si=lAJ8qmHqvQISSL5G" 
+            src="https://www.youtube.com/embed/Dscoh8wYUSQ?si=lAJ8qmHqvQISSL5G"
             title="Courierly Demo Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -71,10 +71,20 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0 }}
           className={styles.buttonGroup}
         >
-          <button className="btn btn-primary">Free Demo Request</button>
-          <button className="btn btn-whatsapp">
-            <FaWhatsapp />Chat on WhatsApp
-          </button>
+          <a href="https://wa.me/8801978866977"
+            target="_blank"
+            rel="noopener noreferrer" className="btn btn-primary">
+            Free Demo Request
+          </a>
+          <a
+            href="https://wa.me/8801978866977"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-whatsapp"
+          >
+            <FaWhatsapp /> Chat on WhatsApp
+          </a>
+
         </motion.div>
       </div>
     </section>
