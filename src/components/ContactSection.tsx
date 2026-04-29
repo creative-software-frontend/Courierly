@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { motion } from 'framer-motion';
 import { HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi';
+import { FaWhatsapp } from 'react-icons/fa';
 import styles from './ContactSection.module.css';
 
 const contactSchema = z.object({
@@ -53,11 +54,12 @@ const ContactSection = () => {
         <div className={styles.contactGrid}>
           <div className={styles.contactInfo}>
             {[
-              { icon: <HiPhone />, title: 'Phone', content: '09649-866 977' },
+              { icon: <HiPhone />, title: 'Hotline', content: '09649-866 977' },
+              { icon: <FaWhatsapp />, title: 'WhatsApp', content: <a href="https://wa.me/8801978866977" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>01978-866 977</a> },
               { icon: <HiMail />, title: 'Email', content: 'info@courierly.com' },
               { icon: <HiLocationMarker />, title: 'Address', content: 'Dhaka, Bangladesh' }
             ].map((info, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -74,7 +76,7 @@ const ContactSection = () => {
             ))}
           </div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
