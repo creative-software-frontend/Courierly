@@ -58,7 +58,7 @@ const HeroSection = () => {
         >
           {/* Updated the src below to your specific video ID */}
           <iframe
-            src="https://www.youtube.com/embed/7_d6dG-LYLY" 
+            src="https://www.youtube.com/embed/Dscoh8wYUSQ?si=lAJ8qmHqvQISSL5G" 
             title="Courierly Demo Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -71,9 +71,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0 }}
           className={styles.buttonGroup}
         >
-          <button className="btn btn-primary">Request Demo</button>
+          <button className="btn btn-primary">Free Demo Request</button>
           <button className="btn btn-whatsapp">
-            <FaWhatsapp /> WhatsApp Us
+            <FaWhatsapp />Chat on WhatsApp
           </button>
         </motion.div>
       </div>

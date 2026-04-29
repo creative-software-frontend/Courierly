@@ -54,7 +54,7 @@ const Footer = () => {
             whileInView={{ opacity: 0.5 }}
             transition={{ delay: 0.3 }}
           >
-            © 2026 **Courierly**. All rights reserved.
+            © 2026 Courierly. All rights reserved.
           </motion.p>
         </motion.div>
       </div>

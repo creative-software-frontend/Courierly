@@ -15,23 +15,23 @@ const ModulesSection = () => {
   const modules = [
     { title: 'Parcel Booking', icon: <HiOutlineCube />, desc: 'Single & bulk parcel booking system' },
     { title: 'Pickup Management', icon: <HiOutlineTruck />, desc: 'Auto & manual pickup assignment' },
-    { title: 'Rider App', icon: <HiOutlineUserCircle />, desc: 'Delivery tracking & task management' },
     { title: 'Real-Time Tracking', icon: <HiOutlineLocationMarker />, desc: 'Live parcel location tracking' },
-    { title: 'Hub Transfer', icon: <HiOutlineSwitchHorizontal />, desc: 'Branch to branch parcel movement' },
     { title: 'Delivery Management', icon: <HiOutlineBadgeCheck />, desc: 'Successful & failed delivery control' },
     { title: 'Return Management', icon: <HiOutlineReceiptRefund />, desc: 'Return & reverse logistics system' },
     { title: 'Pending Orders', icon: <HiOutlineClock />, desc: 'Hold, delay & reschedule orders' },
     { title: 'Admin Dashboard', icon: <HiOutlineAdjustments />, desc: 'Full system control panel' },
     { title: 'User Management', icon: <HiOutlineUsers />, desc: 'Rider, Merchant, Agent control' },
     { title: 'Branch System', icon: <HiOutlineOfficeBuilding />, desc: 'Multi-branch management system' },
-    { title: 'Settings', icon: <HiOutlineCog />, desc: 'Zone, area, pricing & configuration' },
     { title: 'COD Management', icon: <HiOutlineCurrencyDollar />, desc: 'Cash on delivery tracking system' },
     { title: 'Accounts System', icon: <HiOutlineCalculator />, desc: 'Payments, invoices & settlements' },
     { title: 'Financial Reports', icon: <HiOutlineChartPie />, desc: 'Profit, loss & daily reports' },
     { title: 'Analytics Dashboard', icon: <HiOutlineChartBar />, desc: 'Business performance insights' },
     { title: 'SMS Notification', icon: <HiOutlineChatAlt2 />, desc: 'Auto SMS updates for customers' },
     { title: 'Complaint System', icon: <HiOutlineExclamationCircle />, desc: 'Customer complaint handling' },
-    { title: 'Merchant Panel', icon: <HiOutlineUserGroup />, desc: 'Order create & manage system' },
+    { title: 'Hub Transfer', icon: <HiOutlineSwitchHorizontal />, desc: 'Branch to branch parcel movement' },
+    { title: 'Merchant App', icon: <HiOutlineUserGroup />, desc: 'Order create & manage system' },
+    { title: 'Rider App', icon: <HiOutlineUserCircle />, desc: 'Delivery tracking & task management' },
+    { title: 'Settings', icon: <HiOutlineCog />, desc: 'Zone, area, pricing & configuration' },
   ];
 
   const containerVariants = {

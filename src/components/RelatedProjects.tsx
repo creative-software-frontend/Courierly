@@ -8,24 +8,24 @@ import styles from './RelatedProjects.module.css';
 const RelatedProjects = () => {
   const projects = [
     {
-      title: 'Courier Delivery Tracking Tutorial',
-      thumbnail: 'https://img.youtube.com/vi/7_d6dG-LYLY/maxresdefault.jpg',
-      tags: ['Tutorial', 'Software'],
-      link: 'https://www.youtube.com/watch?v=7_d6dG-LYLY',
+      title: 'Best Courier Software Tutorial',
+      thumbnail: 'https://www.youtube.com/embed/bAa7_TkcmQs?si=5ZbCXxt833SjTWHK',
+      tags: ['Courier Software'],
+      link: 'https://www.youtube.com/embed/bAa7_TkcmQs?si=5ZbCXxt833SjTWHK',
     },
     {
-      title: 'Real-Time Tracking Feature Guide',
+      title: 'Real-Time Tracking Software',
       // Replace the ID below when you have your second video
-      thumbnail: 'https://img.youtube.com/vi/7_d6dG-LYLY/maxresdefault.jpg',
-      tags: ['Guide', 'Features'],
-      link: 'https://www.youtube.com/watch?v=7_d6dG-LYLY',
+      thumbnail: 'https://www.youtube.com/embed/e2qSo0NGR-E?si=Ab9thza6djBbl9n3',
+      tags: ['Courier Software'],
+      link: 'https://www.youtube.com/embed/e2qSo0NGR-E?si=Ab9thza6djBbl9n3',
     },
     {
-      title: 'Merchant Panel Walkthrough',
+      title: 'Courier Company Website',
       // Replace the ID below when you have your third video
-      thumbnail: 'https://img.youtube.com/vi/7_d6dG-LYLY/maxresdefault.jpg',
-      tags: ['Tutorial', 'Merchant'],
-      link: 'https://www.youtube.com/watch?v=7_d6dG-LYLY',
+      thumbnail: 'https://www.youtube.com/embed/1CGj0iO5aWc?si=PkxIFVMFxpE_WQQs',
+      tags: ['Courier Software'],
+      link: 'https://www.youtube.com/embed/1CGj0iO5aWc?si=PkxIFVMFxpE_WQQs',
     },
   ];
 
