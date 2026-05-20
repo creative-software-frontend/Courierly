@@ -11,7 +11,7 @@ const PricingSection = () => {
       name: 'Starter',
       desc: 'Small Courier Business',
       price: '50,000',
-      features: ['Basic Tracking System', 'Order Management', 'Limited Support'],
+      features: ['Single Branch System','Basic Tracking System', 'Order Management', 'Limited Support'],
       popular: false,
       btnText: 'Order Now',
     },
