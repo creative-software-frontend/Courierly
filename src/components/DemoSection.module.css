@@ -1,0 +1,256 @@
+.section {
+    padding: 100px 20px;
+    background-color: #f8fafc;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badge {
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #0f172a;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.mainDemoButton {
+    display: inline-block;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 16px 36px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
+.mainDemoButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.25);
+    background-color: #1e293b;
+}
+
+/* 4 Boxes Grid Blueprint */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.cardHeader h3 {
+    font-size: 1.15rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.fieldGroup {
+    margin-bottom: 16px;
+}
+
+.fieldGroup:last-child {
+    margin-bottom: 0;
+}
+
+.fieldGroup label {
+    display: block;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+}
+
+.copyWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copyWrapper:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+.copyWrapper span {
+    font-size: 0.9rem;
+    color: #334155;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.copyBtn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.passwordBox {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #334155;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* App Download Section Block */
+.apkSection {
+    background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.apkTextContainer h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.apkTextContainer p {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+.apkButtonGroup {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.downloadBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.merchantApk {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.merchantApk:hover {
+    background-color: #475569;
+}
+
+.riderApk {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.riderApk:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 768px) {
+    .apkSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .apkTextContainer p {
+        margin: 0 auto;
+    }
+
+    .apkButtonGroup {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .downloadBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -15,8 +15,8 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Detect which section is in view
-      const sections = ['modules', 'pricing', 'projects', 'clients', 'contact'];
+      // Detect which section is in view (Added 'demo' here)
+      const sections = ['modules', 'demo', 'pricing', 'projects', 'clients', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -32,8 +32,10 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // FIXED: Changed route format to match standard hash configuration strings
   const navLinks = [
     { name: 'Modules', href: '#modules', id: 'modules' },
+    { name: 'Live Demo', href: '#demo', id: 'demo' },
     { name: 'Pricing', href: '#pricing', id: 'pricing' },
     { name: 'Projects', href: '#projects', id: 'projects' },
     { name: 'Clients', href: '#clients', id: 'clients' },
@@ -50,7 +52,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className={styles.navLinks}>
           {navLinks.map((link, index) => (
-            <motion.li 
+            <motion.li
               key={link.name}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
