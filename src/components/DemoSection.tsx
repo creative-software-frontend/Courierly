@@ -157,8 +157,8 @@ const DemoSection = () => {
                     <div className={styles.apkButtonGroup}>
                         {/* FIXED: Added .apk extension to the merchant route */}
                         <a
-                            href="/apk/merchant.apk"
-                            download="merchant.apk"
+                            href="/apk/merchant"
+                            download="merchant"
                             className={`${styles.downloadBtn} ${styles.merchantApk}`}
                         >
                             <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
