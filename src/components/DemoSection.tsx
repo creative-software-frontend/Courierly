@@ -141,7 +141,6 @@ const DemoSection = () => {
                     ))}
                 </div>
 
-                {/* APK Downloads Section */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -155,10 +154,10 @@ const DemoSection = () => {
                     </div>
 
                     <div className={styles.apkButtonGroup}>
-                        {/* FIXED: Added .apk extension to the merchant route */}
+                        {/* FIXED: Pointing to merchant.apk with file download attribute */}
                         <a
-                            href="/apk/merchant"
-                            download="merchant"
+                            href="/apk/merchant.apk"
+                            download="merchant.apk"
                             className={`${styles.downloadBtn} ${styles.merchantApk}`}
                         >
                             <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -167,7 +166,7 @@ const DemoSection = () => {
                             Merchant Portal APK
                         </a>
 
-                        {/* FIXED: Set to lowercase rider.apk to match clean file conventions */}
+                        {/* FIXED: Lowercase route matching the newly renamed rider.apk */}
                         <a
                             href="/apk/rider.apk"
                             download="rider.apk"
